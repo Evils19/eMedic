@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "D:\\С# .NET\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eMedic.bundle.scp.css",
+      "Id": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eMedic.bundle.scp.css",
       "PackagePath": "staticwebassets\\eMedic.bundle.scp.css"
     },
     {
-      "Id": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\app.css",
+      "Id": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {

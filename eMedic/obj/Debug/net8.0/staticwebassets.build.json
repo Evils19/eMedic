@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3VQ9i9/YsGlB4aUWbNA8g+DM3YzpmJo/W41dAWx0kP8=",
+  "Hash": "Fx5Hrw4DqXbp1NfBVqrjYsdgZd240x8i6rVSUxfrEFc=",
   "Source": "eMedic",
   "BasePath": "_content/eMedic",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "eMedic\\wwwroot",
       "Source": "eMedic",
-      "ContentRoot": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\",
       "BasePath": "_content/eMedic",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\С# .NET\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\bundle\\eMedic.styles.css",
+      "Identity": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\bundle\\eMedic.styles.css",
       "SourceId": "eMedic",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\С# .NET\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/eMedic",
       "RelativePath": "eMedic.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\С# .NET\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\bundle\\eMedic.styles.css"
+      "OriginalItemSpec": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\bundle\\eMedic.styles.css"
     },
     {
-      "Identity": "D:\\С# .NET\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eMedic.bundle.scp.css",
+      "Identity": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eMedic.bundle.scp.css",
       "SourceId": "eMedic",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\С# .NET\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/eMedic",
       "RelativePath": "eMedic.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\С# .NET\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eMedic.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eMedic.bundle.scp.css"
     },
     {
-      "Identity": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\app.css",
       "SourceId": "eMedic",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\",
       "BasePath": "_content/eMedic",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "eMedic",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\",
       "BasePath": "_content/eMedic",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "eMedic",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\",
       "BasePath": "_content/eMedic",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\favicon.png",
       "SourceId": "eMedic",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\",
       "BasePath": "_content/eMedic",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

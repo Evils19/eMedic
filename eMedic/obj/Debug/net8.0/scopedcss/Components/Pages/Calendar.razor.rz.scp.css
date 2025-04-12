@@ -1,0 +1,90 @@
+.layout[b-if65sns6k1] {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top-bar[b-if65sns6k1] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+}
+
+.content[b-if65sns6k1] {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.calendar[b-if65sns6k1] {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow: auto;
+}
+
+.calendar-header[b-if65sns6k1] {
+    display: flex;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar-date[b-if65sns6k1] {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.calendar-body[b-if65sns6k1] {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-row[b-if65sns6k1] {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.time-slot[b-if65sns6k1] {
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+}
+
+.appointment[b-if65sns6k1] {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.appointment-item[b-if65sns6k1] {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.right-sidebar[b-if65sns6k1] {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+.logout-btn[b-if65sns6k1] {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

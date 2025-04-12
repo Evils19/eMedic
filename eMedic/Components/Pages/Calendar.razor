@@ -1,0 +1,59 @@
+@page "/panou"
+
+<PageTitle>Dashboard</PageTitle>
+
+<div class="layout">
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <h1>Dashboard</h1>
+        <button class="logout-btn">Logout</button>
+    </div>
+
+    <div class="content">
+        <!-- Calendar -->
+        <div class="calendar">
+            <div class="calendar-header">
+                @foreach (var date in Dates)
+                {
+                    <div class="calendar-date">@date.ToString("MMM dd")</div>
+                }
+            </div>
+            <div class="calendar-body">
+                @foreach (var timeSlot in TimeSlots)
+                {
+                    <div class="calendar-row">
+                        <div class="time-slot">@timeSlot</div>
+                        @foreach (var date in Dates)
+                        {
+                            <div class="appointment">
+                                @if (Appointments.TryGetValue((date, timeSlot), out var appointment))
+                                {
+                                    <div class="appointment-item">@appointment</div>
+                                }
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <h3>User Information</h3>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Role:</strong> Admin</p>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<DateTime> Dates = Enumerable.Range(0, 7).Select(i => DateTime.Today.AddDays(i)).ToList();
+    private List<string> TimeSlots = Enumerable.Range(8, 10).Select(i => $"{i}:00 - {i}:30").ToList();
+    private Dictionary<(DateTime, string), string> Appointments = new()
+    {
+        { (DateTime.Today, "8:00 - 8:30"), "Meeting with Dr. Smith" },
+        { (DateTime.Today.AddDays(1), "9:00 - 9:30"), "Team Standup" },
+        { (DateTime.Today.AddDays(2), "10:00 - 10:30"), "Project Review" }
+    };
+}

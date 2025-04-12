@@ -2628,23 +2628,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jitar\\.nuget\\packages\\": {},
+    "C:\\Users\\leoce\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\С# .NET\\eMedic\\eMedic\\eMedic.csproj",
+      "projectUniqueName": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\eMedic.csproj",
       "projectName": "eMedic",
-      "projectPath": "D:\\С# .NET\\eMedic\\eMedic\\eMedic.csproj",
-      "packagesPath": "C:\\Users\\jitar\\.nuget\\packages\\",
-      "outputPath": "D:\\С# .NET\\eMedic\\eMedic\\obj\\",
+      "projectPath": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\eMedic.csproj",
+      "packagesPath": "C:\\Users\\leoce\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jitar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leoce\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2666,11 +2666,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2713,7 +2708,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
