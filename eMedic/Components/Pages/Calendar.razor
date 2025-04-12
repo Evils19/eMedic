@@ -52,6 +52,13 @@
         <div class="popup-overlay">
             <div class="popup">
                 <h3>Appointment Details</h3>
+                <p><strong>IDNP:</strong> @selectedIDNP</p>
+                <p><strong>Full Name:</strong> @selectedFullName</p>
+                <p><strong>Age:</strong> @selectedAge</p>
+                <p><strong>Gender:</strong> @selectedGender</p>
+                <p><strong>Phone:</strong> @selectedPhone</p>
+                <p><strong>Email:</strong> @selectedEmail</p>
+                <p><strong>Address:</strong> @selectedAddress</p>
                 <p><strong>Date:</strong> @selectedDate.ToString("MMM dd")</p>
                 <p><strong>Time:</strong> @selectedTimeSlot</p>
                 <p><strong>Client:</strong> @selectedAppointment</p>
@@ -66,6 +73,7 @@
 </div>
 
 @code {
+    
     private List<DateTime> Dates = Enumerable.Range(0, 7).Select(i => DateTime.Today.AddDays(i)).ToList();
     private List<string> TimeSlots = Enumerable.Range(8, 10).Select(i => $"{i}:00 - {i}:30").ToList();
     private Dictionary<(DateTime, string), string> Appointments = new()
@@ -76,6 +84,13 @@
     };
 
     private bool isPopupVisible = false;
+    private string selectedIDNP;
+    private string selectedFullName;
+    private int selectedAge;
+    private string selectedGender;
+    private string selectedPhone;
+    private string selectedEmail;
+    private string selectedAddress;
     private string selectedAppointment;
     private DateTime selectedDate;
     private string selectedTimeSlot;
