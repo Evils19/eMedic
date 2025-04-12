@@ -52,16 +52,26 @@
         <div class="popup-overlay">
             <div class="popup">
                 <h3>Appointment Details</h3>
-                <p><strong>IDNP:</strong> @selectedIDNP</p>
-                <p><strong>Full Name:</strong> @selectedFullName</p>
-                <p><strong>Age:</strong> @selectedAge</p>
-                <p><strong>Gender:</strong> @selectedGender</p>
-                <p><strong>Phone:</strong> @selectedPhone</p>
-                <p><strong>Email:</strong> @selectedEmail</p>
-                <p><strong>Address:</strong> @selectedAddress</p>
-                <p><strong>Date:</strong> @selectedDate.ToString("MMM dd")</p>
-                <p><strong>Time:</strong> @selectedTimeSlot</p>
-                <p><strong>Client:</strong> @selectedAppointment</p>
+                <p>
+                    @selectedIDNP, 
+                    <strong>@selectedFullName, </strong>
+                    @selectedAge, 
+                    @selectedGender, 
+                    @selectedPhone, 
+                    @selectedEmail, 
+                    @selectedAddress, 
+                    @selectedDate.ToString("MMM dd"), 
+                    @selectedTimeSlot,
+                    @selectedAppointment
+                </p>
+                <br/>
+                <strong>Scurt istoric</strong><br/>
+                <p>Din datele propuse de catre pacient si informatiile investigate din cartela medicala este o probabilitate
+                    mare ca durerea de cap sa fie cauzata prin faptul ca pacientul bea prea multa cafea si are un pic
+                    probleme mentale.</p>
+                <br/>
+                <strong>Motivul adresarii</strong>
+                <p>Durere de cap fara o cauza anumita care ar veni in cap.</p>
                 <div class="popup-actions">
                     <button class="delete-btn" @onclick="DeleteAppointment">Delete</button>
                     <button class="reappoint-btn" @onclick="ReappointClient">Reappoint</button>
@@ -84,15 +94,15 @@
     };
 
     private bool isPopupVisible = false;
-    private string selectedIDNP;
-    private string selectedFullName;
-    private int selectedAge;
-    private string selectedGender;
-    private string selectedPhone;
-    private string selectedEmail;
-    private string selectedAddress;
+    private string selectedIDNP = "1234567890123";
+    private string selectedFullName = "Tudor Deviza";
+    private int selectedAge = 23;
+    private string selectedGender = "Masculin";
+    private string selectedPhone = "0741234567";
+    private string selectedEmail = "tudor.deviza@gmail.com";
+    private string selectedAddress = "Str. Studentilor 7/1 Tekwil";
     private string selectedAppointment;
-    private DateTime selectedDate;
+    private DateTime selectedDate = new DateTime(2025, 04, 13);
     private string selectedTimeSlot;
 
     private void ShowPopup(DateTime date, string timeSlot)
