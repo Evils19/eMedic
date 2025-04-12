@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\С# .NET\\eMedic\\eMedic\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eMedic.bundle.scp.css",
+      "PackagePath": "staticwebassets\\eMedic.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\С# .NET\\eMedic\\eMedic\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.eMedic.props",
+      "PackagePath": "build\\eMedic.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.eMedic.props",
+      "PackagePath": "buildMultiTargeting\\eMedic.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.eMedic.props",
+      "PackagePath": "buildTransitive\\eMedic.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.eMedic.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
