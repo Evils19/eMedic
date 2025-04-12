@@ -1,50 +1,68 @@
-@page "/panou"
+@page "/"
+@rendermode InteractiveServer
 
 <PageTitle>Dashboard</PageTitle>
 
 <div class="layout">
     <!-- Top Bar -->
-    <div class="top-bar">
-        <h1>Dashboard</h1>
-        <button class="logout-btn">Logout</button>
-    </div>
-
-    <div class="content">
-        <!-- Calendar -->
-        <div class="calendar">
-            <div class="calendar-header">
-                @foreach (var date in Dates)
-                {
-                    <div class="calendar-date">@date.ToString("MMM dd")</div>
-                }
-            </div>
-            <div class="calendar-body">
-                @foreach (var timeSlot in TimeSlots)
-                {
-                    <div class="calendar-row">
-                        <div class="time-slot">@timeSlot</div>
-                        @foreach (var date in Dates)
-                        {
-                            <div class="appointment">
-                                @if (Appointments.TryGetValue((date, timeSlot), out var appointment))
-                                {
-                                    <div class="appointment-item">@appointment</div>
-                                }
-                            </div>
-                        }
+    <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MedConsult</span>
                     </div>
-                }
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <button class="login-btn">Login</button>
+                </nav>
+            </div>
+    <!-- Calendar -->
+    <div class="calendar">
+        <!-- Calendar Header -->
+        <div class="time-slot"></div>
+        @foreach (var date in Dates)
+        {
+            <div class="calendar-date">@date.ToString("MMM dd")</div>
+        }
+    
+        <!-- Calendar Body -->
+        @foreach (var timeSlot in TimeSlots)
+        {
+            <div class="time-slot">@timeSlot</div>
+            @foreach (var date in Dates)
+            {
+                <div class="appointment" @onclick="() => ShowPopup(date, timeSlot)">
+                    @if (Appointments.TryGetValue((date, timeSlot), out var appointment))
+                    {
+                        <div class="appointment-item">@appointment</div>
+                    }
+                </div>
+            }
+        }
+    </div>
+    
+    <!-- Popup -->
+    @if (isPopupVisible)
+    {
+        <div class="popup-overlay">
+            <div class="popup">
+                <h3>Appointment Details</h3>
+                <p><strong>Date:</strong> @selectedDate.ToString("MMM dd")</p>
+                <p><strong>Time:</strong> @selectedTimeSlot</p>
+                <p><strong>Client:</strong> @selectedAppointment</p>
+                <div class="popup-actions">
+                    <button class="delete-btn" @onclick="DeleteAppointment">Delete</button>
+                    <button class="reappoint-btn" @onclick="ReappointClient">Reappoint</button>
+                    <button class="close-btn" @onclick="ClosePopup">Close</button>
+                </div>
             </div>
         </div>
-
-        <!-- Right Sidebar -->
-        <div class="right-sidebar">
-            <h3>User Information</h3>
-            <p><strong>Name:</strong> John Doe</p>
-            <p><strong>Email:</strong> john.doe@example.com</p>
-            <p><strong>Role:</strong> Admin</p>
-        </div>
-    </div>
+    }
 </div>
 
 @code {
@@ -56,4 +74,37 @@
         { (DateTime.Today.AddDays(1), "9:00 - 9:30"), "Team Standup" },
         { (DateTime.Today.AddDays(2), "10:00 - 10:30"), "Project Review" }
     };
+
+    private bool isPopupVisible = false;
+    private string selectedAppointment;
+    private DateTime selectedDate;
+    private string selectedTimeSlot;
+
+    private void ShowPopup(DateTime date, string timeSlot)
+    {
+        if (Appointments.TryGetValue((date, timeSlot), out var appointment))
+        {
+            selectedAppointment = appointment;
+            selectedDate = date;
+            selectedTimeSlot = timeSlot;
+            isPopupVisible = true;
+        }
+    }
+
+    private void ClosePopup()
+    {
+        isPopupVisible = false;
+    }
+
+    private void DeleteAppointment()
+    {
+        Appointments.Remove((selectedDate, selectedTimeSlot));
+        ClosePopup();
+    }
+
+    private void ReappointClient()
+    {
+        // Logic for reappointment (e.g., open a form or redirect to another page)
+        ClosePopup();
+    }
 }
