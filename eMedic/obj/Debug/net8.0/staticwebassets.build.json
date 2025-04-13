@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Fx5Hrw4DqXbp1NfBVqrjYsdgZd240x8i6rVSUxfrEFc=",
+  "Hash": "TjaNmfnsipelsNfEAYZQLSjBTxvaY0I+da2lSQ1UbOY=",
   "Source": "eMedic",
   "BasePath": "_content/eMedic",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\resources\\homemedic.jpeg",
+      "SourceId": "eMedic",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\",
+      "BasePath": "_content/eMedic",
+      "RelativePath": "resources/homemedic.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resources\\homemedic.jpeg"
     }
   ]
 }

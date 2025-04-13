@@ -1,5 +1,6 @@
-﻿@page "/nahui"
-
+﻿@page "/"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
 <PageTitle>Home</PageTitle>
 
 
@@ -8,16 +9,14 @@
             <nav class="navbar">
                 <div class="logo">
                     <i class="fas fa-heartbeat"></i>
-                    <span>MedConsult</span>
+                    <span>eMedic</span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Doctors</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Pagina principala</a></li>
+                    <li><a href="#">Despre</a></li>
+                    <li><a href="#">Contacte</a></li>
                 </ul>
-                <button class="login-btn">Login</button>
+                <button class="login-btn" @onclick="Login">Intra in sistem</button>
             </nav>
         </div>
 
@@ -26,18 +25,18 @@
         <div class="container">
             <div class="hero">
                 <div class="hero-content">
-                    <h1>Professional Healthcare Services From Your Home</h1>
-                    <p>Connect with licensed doctors and get medical consultation online. Safe, secure, and convenient healthcare solutions at your fingertips.</p>
+                    <h1>Serviciu de monitorizare a programarilor pentru medici</h1>
+                    <p>Mediu usor de monitorizare a programului de lucru si inscrierilor pacientilor integrat cu serviciile guvernamentale.</p>
                     <div class="cta-buttons">
-                        <button class="primary-btn">Book Appointment</button>
+                        <button class="primary-btn">Intra in sistem</button>
                         <button class="secondary-btn">
                             <i class="fas fa-play"></i>
-                            Watch Video
+                            Vizualizeaza video
                         </button>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="/api/placeholder/600/400" alt="Doctor with patient">
+                    <img src="resources/homemedic.jpeg" alt="Doctor with patient">
                 </div>
             </div>
         </div>
@@ -290,3 +289,15 @@
             </div>
         </div>
     </footer>
+    
+    
+    @code{
+
+
+
+        public void Login()
+        {
+            NavigationManager.NavigateTo("/orar");
+        }
+
+    }

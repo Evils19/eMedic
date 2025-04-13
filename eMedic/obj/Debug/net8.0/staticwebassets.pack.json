@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\leoce\\source\\repos\\eMedic\\eMedic\\wwwroot\\resources\\homemedic.jpeg",
+      "PackagePath": "staticwebassets\\resources\\homemedic.jpeg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.eMedic.props",
       "PackagePath": "build\\eMedic.props"
     },

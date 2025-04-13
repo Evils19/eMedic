@@ -84,11 +84,10 @@ header[b-31d1f1p4qz] {
 
 /* Hero section */
 .hero[b-31d1f1p4qz] {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: flex;
     align-items: center;
-    gap: 40px;
 }
 
 .hero-content[b-31d1f1p4qz] {
