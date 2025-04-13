@@ -13,10 +13,9 @@
                     </div>
                     <ul class="nav-links">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Doctors</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="#">Modificare agenda</a></li>
                     </ul>
                     <button class="login-btn">Logout</button>
                 </nav>
@@ -88,9 +87,11 @@
     private List<string> TimeSlots = Enumerable.Range(8, 10).Select(i => $"{i}:00 - {i}:30").ToList();
     private Dictionary<(DateTime, string), string> Appointments = new()
     {
-        { (DateTime.Today, "8:00 - 8:30"), "Meeting with Dr. Smith" },
-        { (DateTime.Today.AddDays(1), "9:00 - 9:30"), "Team Standup" },
-        { (DateTime.Today.AddDays(2), "10:00 - 10:30"), "Project Review" }
+        { (DateTime.Today, "8:00 - 8:30"), "Deviza Tudor" },
+        { (DateTime.Today, "9:00 - 9:30"), "Plamadeala Eugen" },
+        { (DateTime.Today.AddDays(1), "9:00 - 9:30"), "Jitaru Evelin" },
+        { (DateTime.Today.AddDays(2), "10:00 - 10:30"), "Caminschi Leonid" }
+        
     };
 
     private bool isPopupVisible = false;
